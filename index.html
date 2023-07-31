@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color of fortune </title>
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <h1> Color of <br><span id="colorDisplay">RGB</span><br> Fortune </h1>
+    <div id="game_area">
+        <div id="stripe">
+            <div class="left-section">
+                <label>Difficulty: </label>
+                <input type="range" id="slider" min="2" max="12" step="1" value="2"
+                    oninput="this.nextElementSibling.value = this.value">
+                <output>2</output>
+            </div>
+            <span id=messageTry class="middle-section"></span>
+            <button id="reset">Start</button>
+        </div>
+        <div id="square_area"></div>
+    </div>
+    <script src="js/animation.js"></script>
+</body>
+
+</html>
